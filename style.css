@@ -410,9 +410,15 @@ nav ul .fa-regular {
 .footer-col-4 h3{
     margin-left: 28%;
  }
- .footer p{
+ .footer-col-1 p{
     text-align: center;
     font-size: 15px;
+    margin-bottom: 5%;
+ }
+ .footer-col-3 p{
+    text-align: center;
+    font-size: 15px;
+   margin-right: 15%;
     margin-bottom: 5%;
  }
  .social-icons1{
