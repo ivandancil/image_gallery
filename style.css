@@ -358,6 +358,7 @@ nav .dropdown-item{
     margin-left: -8%;
     padding: 2%;
     font-style: italic;
+    text-decoration: none;
 }
 
 
@@ -540,8 +541,9 @@ nav ul .fa-regular {
 .footer-col-3 h3{
    margin-left: 28%;
 }
-.footer-col-4 h3{
-    margin-left: 28%;
+.footer-col-4 h5{
+    margin-left: 40%;
+    
  }
  .footer-col-1 p{
     text-align: center;
