@@ -351,12 +351,29 @@ nav .dropdown-item{
     padding: 2%;
     font-style: italic;
 }
+.footer-col-4 a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    margin-left: -8%;
+    padding: 2%;
+    font-style: italic;
+}
+
 
 .footer-col-3 h3, .footer-col-4 h3{
     margin-left: 15%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 800;
     font-size: 20px;
+}
+ .footer-col-4 h5{
+    margin-left: 34%;
+    margin-top: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
 }
 ul{
     list-style-type: none;
