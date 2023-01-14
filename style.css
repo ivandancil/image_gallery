@@ -25,7 +25,7 @@ nav{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 60%;
+    margin-left: 65%;
 }
 
 nav ul li{
@@ -37,8 +37,8 @@ nav ul li{
 nav ul li a{
     color: black;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 19px;
+    font-weight: 800;
     position: relative;
 }
 
@@ -57,26 +57,54 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-ul li ul.dropdown li{
-    display: block;
-    margin-top: 15px;
-    
-    
-}
-ul li ul.dropdown{
-    border-radius: 10%;
-    width: 9%;
-    margin-top: .7%;
-    background: transparent;
+nav ul ul{
     position: absolute;
-    z-index: 999;
+    top: 52px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    margin:0px;
+    margin-bottom: 9%;
+    width: 150px;
+    float: none;
+    display: list-item;
+   
+}
+nav ul ul li a{
+    font-size: 17px;
+}
+
+nav .dropdown a::after{
+    content: '';
+    display: inline-block;
+    margin-left: .5em;
+    vertical-align: middle;
+}
+
+nav .dropdown-menu{
     display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80%;
+    padding:.5em;
+    background-color: #fff;
 }
-ul li ul:hover{
-    background: transparent;
-}
-ul li:hover ul.dropdown{
+nav .dropdown.show .dropdown-menu{
     display: block;
+}
+nav .dropdown-item{
+    font-size:16px;
+    line-height: 2;
+    text-decoration: none;
 }
 
 .row{
@@ -171,13 +199,17 @@ ul li:hover ul.dropdown{
 }
 
 .h4{
+    font-size: 100%px;
     color: #555;
     font-weight: normal;
+    margin-bottom: 90%;
    
 }
-.col-4 p{
-    font-size: 14px;
-    font-weight: 600;
+.col-4 span{
+    font-size: 18px;
+    font-weight: 700;
+    
+   
 }
 .col-4:hover{
     transform: translateY(-5px);
@@ -185,6 +217,7 @@ ul li:hover ul.dropdown{
 
 
 /*------------- all product page --------*/
+
 
 .row-2{
     justify-content: space-between;
@@ -236,12 +269,16 @@ ul li:hover ul.dropdown{
     font-weight: bold;
 }
 /*------------------Social media---------------------*/
+.social-icons span i{
+    font-size: 15px;
+}
 .social-icons a{
     text-decoration: none;
-    font-size: 20px;
-    margin-right: 7px;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    font-size: 16px;
+    float: right;
+    margin-right: 12px;
+    
+    margin-bottom: 10%;
     color: rgb(74, 71, 71);
     display: inline-block;
     transition: transform 0.5s;
@@ -250,6 +287,7 @@ ul li:hover ul.dropdown{
     color: orange;
     transform: translateY(-2px);
 }
+
 
 /* ----- footer -----*/
 
@@ -328,7 +366,7 @@ ul{
     text-decoration: none;
     font-size: 30px;
     margin-bottom: 9%;
-    margin-left: 7%;
+    margin-left: 30%;
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
@@ -336,6 +374,79 @@ ul{
 .social-icons1 a:hover{
     color: orange;
     transform: translateY(-5px);
+}
+
+/*--cart items */
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 20%;
+    height: 23vh;
+    margin-right: 10px;
+}
+td i{
+    font-size: 12px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 380px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.btn-buy{
+    display: flex;
+    margin-left: 77%;
+    margin-top: 2%;
+    padding: 10px 20px;
+    border: none;
+    background: #ff523b;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.btn-buy:hover{
+    background: #563434;
 }
 
 /*------------------- Make it Responsive ---------------*/
@@ -354,8 +465,10 @@ nav .fa-bars{
       font-size: 16px;
   }
   .btn{
-    margin-left: 30%;
-    font-size: 20px;
+    margin-left: 35%;
+    font-size: 15px;
+    padding:  8px 20px;
+    
 
   }
     
@@ -370,6 +483,9 @@ nav .fa-bars{
         margin-top: 5% ;
     }
 
+   
+    
+
 nav ul{
 background: rgb(220, 187, 124);
 position: fixed;
@@ -377,7 +493,7 @@ top: 0;
 right: -200px;
 width: 150px; 
 height: 100vh;
-padding-top: 50px;
+padding-top: 70px;
 z-index: 2;
 transition: right 0.5s;
 }
@@ -398,7 +514,7 @@ nav ul .fa-regular {
     flex-basis: 100%;
 }
 .footer{
-    height: 80vh;
+    height: 60vh;
     
 }
 .footer-col-1 h3{
@@ -423,5 +539,17 @@ nav ul .fa-regular {
  }
  .social-icons1{
     margin-left: 16%;
+ }
+
+ td img{
+    width: 65%;
+    margin-bottom: 5%;
+ }
+
+ .cart-info p{
+    display: none;
+ }
+  th{
+    margin-right: 20%;
  }
 }

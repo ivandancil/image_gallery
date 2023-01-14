@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="cart.js"></script>
+    <link rel="stylesheet" href="lightbox.css">
+    <script src="https://kit.fontawesome.com/202413a7ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                   <li><a href="">Store  <i class="fa-solid fa-caret-down" ></i></a>
+                        <ul class="dropdown">
+                            <li><a href="hinimo.html">Hinimo</a></li>
+                            <li><a href="gladiolus.html">Gladiolus</a></li>
+                        </ul></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping" width="30px" height="30px"></i></a>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()" ></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+        </div>
+    </div>
+<!---cart items details-->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr> 
+            <td>
+                <div class="cart-info">
+                    <img src="images/image_1.jpg" alt="">
+                    <div>
+                        <p>Red Bucket Hat</p>
+                        <small>Price: <i class="fa-solid fa-peso-sign"></i>300.00</small>
+                        <br>
+                        <a href="" class="cart-remove">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td><i class="fa-solid fa-peso-sign"></i>300.00</td>
+        </tr>
+
+        <tr> 
+            <td>
+                <div class="cart-info">
+                    <img src="images/image_16.jpg" alt="">
+                    <div>
+                        <p>Red Bucket Hat</p>
+                        <small>Price: <i class="fa-solid fa-peso-sign"></i>300.00</small>
+                        <br>
+                        <a href="" class="cart-remove">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td><i class="fa-solid fa-peso-sign"></i>300.00</td>
+        </tr>
+
+        <tr> 
+            <td>
+                <div class="cart-info">
+                    <img src="images/image_2.jpg" alt="">
+                    <div>
+                        <p>Red Bucket Hat</p>
+                        <small>Price: <i class="fa-solid fa-peso-sign"></i>300.00</small>
+                        <br>
+                        <a href="" class="cart-remove">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td><i class="fa-solid fa-peso-sign"></i>300.00</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td><i class="fa-solid fa-peso-sign"></i>300.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td><i class="fa-solid fa-peso-sign"></i>20.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td><i class="fa-solid fa-peso-sign"></i>320.00</td>
+            </tr>
+            <!--buy button-->
+           
+        </table>
+        
+    </div>
+    <button type="button" class="btn-buy">Buy now</button>
+</div>
+    <!-----footer----->
+
+    <div id="contact">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Online Shop Gallery</h3>
+                        <p>This is a gallery of items to sell. You may see items that interest you.
+                            You can reach the seller through information indicated below on the contact section.</p>
+                    </div>
+                    
+                    <div class="footer-col-3">
+                        <h3>Contact Us</h3>
+                        <p>+ 63 912 34 5678</p>
+                        <p>ivanbdancil@gmail.com</p>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <div class="social-icons1">
+                            <a href="https://facebook.com/ " target="_blank" rel="noopener" rel="noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/jobs/"target="_blank" rel="noopener" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/ivandancil" target="_blank" rel="noopener" rel="noreferrer"><i class="fa-brands fa-github"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script>
+
+        var sidemenu =document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
